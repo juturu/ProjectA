@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JUTURU</Machine>
+    <WindowsUser>jhreddy</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>d8aff1c7-80ab-46f1-bd51-cf43940bcaf5</PackageIdentityName>
+    <IntermediateOutputPath>c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\bin\Debug\FlickrPhotos.WindowsPhone.exe">
+      <PackagePath>FlickrPhotos.WindowsPhone.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\packages\FlickrNet.3.15.0\lib\net20\FlickrNet.dll">
+      <PackagePath>FlickrNet.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\bin\Debug\FlickrPhotos.WindowsPhone.xr.xml">
+      <PackagePath>FlickrPhotos.WindowsPhone.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
