@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="FlickrPhotos.Views.FlickrPhotos"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FlickrPhotos.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=FlickrPhotosViewModel}">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <GridView x:Name="PhotoItems" ItemsSource="{Binding PhotosCollection}">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Height="250" Width="250">
+                    <Image Source="{Binding Path=ThumbNailUri}" Stretch="UniformToFill"></Image>
+                    <StackPanel Orientation="Vertical" Background="#CC000000" 
+                    Height="90" VerticalAlignment="Bottom">
+                        <TextBlock Text="{Binding Path=Name}" 
+                       Margin="10,3,0,0" Width="242" Height="62" 
+                       TextTrimming="WordEllipsis" TextWrapping="Wrap" HorizontalAlignment="Left"/>
+                        
+                    </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapGrid Orientation="Vertical"></WrapGrid>
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+        </GridView>
+    </Grid>
+</Page>
+

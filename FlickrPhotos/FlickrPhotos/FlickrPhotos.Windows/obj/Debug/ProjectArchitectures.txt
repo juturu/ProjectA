@@ -1,0 +1,1 @@
+C:\Users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.Windows\FlickrPhotos.Windows.csproj;neutral
