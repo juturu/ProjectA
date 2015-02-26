@@ -22,6 +22,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\FlickrPhotoManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ImageSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Photo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\StoryboardMessage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FlickrPhotosViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FlickrAuthentication.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLocator.cs" />

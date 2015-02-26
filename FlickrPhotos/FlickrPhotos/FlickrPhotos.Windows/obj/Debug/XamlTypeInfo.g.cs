@@ -124,37 +124,83 @@ namespace FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[14];
+            _typeNameTable = new string[37];
             _typeNameTable[0] = "FlickrPhotos.ViewModel.ViewModelLocator";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "FlickrPhotos.ViewModel.FlickrAuthentication";
             _typeNameTable[3] = "GalaSoft.MvvmLight.ViewModelBase";
             _typeNameTable[4] = "GalaSoft.MvvmLight.ObservableObject";
             _typeNameTable[5] = "FlickrPhotos.ViewModel.FlickrPhotosViewModel";
-            _typeNameTable[6] = "FlickrPhotos.Views.FlickrPhotos";
-            _typeNameTable[7] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[8] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[9] = "FlickrPhotos.Views.WebViewExtensions";
-            _typeNameTable[10] = "String";
-            _typeNameTable[11] = "Windows.UI.Xaml.Controls.WebView";
-            _typeNameTable[12] = "FlickrPhotos.FlickrAuthenticationView";
-            _typeNameTable[13] = "FlickrPhotos.MainPage";
+            _typeNameTable[6] = "WinRT.Triggers.Interactions";
+            _typeNameTable[7] = "WinRT.Triggers.TriggerCollection";
+            _typeNameTable[8] = "WinRT.Triggers.AttachableCollection`1<WinRT.Triggers.Trigger>";
+            _typeNameTable[9] = "Windows.UI.Xaml.FrameworkElement";
+            _typeNameTable[10] = "WinRT.Triggers.Trigger";
+            _typeNameTable[11] = "WinRT.Triggers.AssociatableElement";
+            _typeNameTable[12] = "WinRT.Triggers.AttachableCollection`1<WinRT.Triggers.TriggerAction>";
+            _typeNameTable[13] = "WinRT.Triggers.TriggerAction";
+            _typeNameTable[14] = "WinRT.Triggers.AttachableCollection`1<WinRT.Triggers.Condition>";
+            _typeNameTable[15] = "WinRT.Triggers.Condition";
+            _typeNameTable[16] = "WinRT.Triggers.ConditionOperator";
+            _typeNameTable[17] = "System.Enum";
+            _typeNameTable[18] = "System.ValueType";
+            _typeNameTable[19] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[20] = "WinRT.Triggers.EventTrigger";
+            _typeNameTable[21] = "WinRT.Triggers.EventHookingTrigger";
+            _typeNameTable[22] = "String";
+            _typeNameTable[23] = "WinRT.Triggers.InvokeCommandAction";
+            _typeNameTable[24] = "System.Windows.Input.ICommand";
+            _typeNameTable[25] = "Boolean";
+            _typeNameTable[26] = "FlickrPhotos.Views.FlickrAlbums";
+            _typeNameTable[27] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[28] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[29] = "FlickrPhotos.Views.FlickrPhotos";
+            _typeNameTable[30] = "FlickrPhotos.Views.WebViewExtensions";
+            _typeNameTable[31] = "Windows.UI.Xaml.Controls.WebView";
+            _typeNameTable[32] = "FlickrPhotos.FlickrAuthenticationView";
+            _typeNameTable[33] = "FlickrPhotos.MainPage";
+            _typeNameTable[34] = "FlickrPhotos.Views.PhotosView";
+            _typeNameTable[35] = "FlickrPhotos.Common.ObservableDictionary";
+            _typeNameTable[36] = "FlickrPhotos.Common.NavigationHelper";
 
-            _typeTable = new global::System.Type[14];
+            _typeTable = new global::System.Type[37];
             _typeTable[0] = typeof(global::FlickrPhotos.ViewModel.ViewModelLocator);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::FlickrPhotos.ViewModel.FlickrAuthentication);
             _typeTable[3] = typeof(global::GalaSoft.MvvmLight.ViewModelBase);
             _typeTable[4] = typeof(global::GalaSoft.MvvmLight.ObservableObject);
             _typeTable[5] = typeof(global::FlickrPhotos.ViewModel.FlickrPhotosViewModel);
-            _typeTable[6] = typeof(global::FlickrPhotos.Views.FlickrPhotos);
-            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[9] = typeof(global::FlickrPhotos.Views.WebViewExtensions);
-            _typeTable[10] = typeof(global::System.String);
-            _typeTable[11] = typeof(global::Windows.UI.Xaml.Controls.WebView);
-            _typeTable[12] = typeof(global::FlickrPhotos.FlickrAuthenticationView);
-            _typeTable[13] = typeof(global::FlickrPhotos.MainPage);
+            _typeTable[6] = typeof(global::WinRT.Triggers.Interactions);
+            _typeTable[7] = typeof(global::WinRT.Triggers.TriggerCollection);
+            _typeTable[8] = typeof(global::WinRT.Triggers.AttachableCollection<global::WinRT.Triggers.Trigger>);
+            _typeTable[9] = typeof(global::Windows.UI.Xaml.FrameworkElement);
+            _typeTable[10] = typeof(global::WinRT.Triggers.Trigger);
+            _typeTable[11] = typeof(global::WinRT.Triggers.AssociatableElement);
+            _typeTable[12] = typeof(global::WinRT.Triggers.AttachableCollection<global::WinRT.Triggers.TriggerAction>);
+            _typeTable[13] = typeof(global::WinRT.Triggers.TriggerAction);
+            _typeTable[14] = typeof(global::WinRT.Triggers.AttachableCollection<global::WinRT.Triggers.Condition>);
+            _typeTable[15] = typeof(global::WinRT.Triggers.Condition);
+            _typeTable[16] = typeof(global::WinRT.Triggers.ConditionOperator);
+            _typeTable[17] = typeof(global::System.Enum);
+            _typeTable[18] = typeof(global::System.ValueType);
+            _typeTable[19] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[20] = typeof(global::WinRT.Triggers.EventTrigger);
+            _typeTable[21] = typeof(global::WinRT.Triggers.EventHookingTrigger);
+            _typeTable[22] = typeof(global::System.String);
+            _typeTable[23] = typeof(global::WinRT.Triggers.InvokeCommandAction);
+            _typeTable[24] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[25] = typeof(global::System.Boolean);
+            _typeTable[26] = typeof(global::FlickrPhotos.Views.FlickrAlbums);
+            _typeTable[27] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[28] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[29] = typeof(global::FlickrPhotos.Views.FlickrPhotos);
+            _typeTable[30] = typeof(global::FlickrPhotos.Views.WebViewExtensions);
+            _typeTable[31] = typeof(global::Windows.UI.Xaml.Controls.WebView);
+            _typeTable[32] = typeof(global::FlickrPhotos.FlickrAuthenticationView);
+            _typeTable[33] = typeof(global::FlickrPhotos.MainPage);
+            _typeTable[34] = typeof(global::FlickrPhotos.Views.PhotosView);
+            _typeTable[35] = typeof(global::FlickrPhotos.Common.ObservableDictionary);
+            _typeTable[36] = typeof(global::FlickrPhotos.Common.NavigationHelper);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -191,9 +237,50 @@ namespace FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo
 
         private object Activate_0_ViewModelLocator() { return new global::FlickrPhotos.ViewModel.ViewModelLocator(); }
         private object Activate_4_ObservableObject() { return new global::GalaSoft.MvvmLight.ObservableObject(); }
-        private object Activate_6_FlickrPhotos() { return new global::FlickrPhotos.Views.FlickrPhotos(); }
-        private object Activate_12_FlickrAuthenticationView() { return new global::FlickrPhotos.FlickrAuthenticationView(); }
-        private object Activate_13_MainPage() { return new global::FlickrPhotos.MainPage(); }
+        private object Activate_7_TriggerCollection() { return new global::WinRT.Triggers.TriggerCollection(); }
+        private object Activate_8_AttachableCollection() { return new global::WinRT.Triggers.AttachableCollection<global::WinRT.Triggers.Trigger>(); }
+        private object Activate_12_AttachableCollection() { return new global::WinRT.Triggers.AttachableCollection<global::WinRT.Triggers.TriggerAction>(); }
+        private object Activate_14_AttachableCollection() { return new global::WinRT.Triggers.AttachableCollection<global::WinRT.Triggers.Condition>(); }
+        private object Activate_15_Condition() { return new global::WinRT.Triggers.Condition(); }
+        private object Activate_20_EventTrigger() { return new global::WinRT.Triggers.EventTrigger(); }
+        private object Activate_23_InvokeCommandAction() { return new global::WinRT.Triggers.InvokeCommandAction(); }
+        private object Activate_26_FlickrAlbums() { return new global::FlickrPhotos.Views.FlickrAlbums(); }
+        private object Activate_29_FlickrPhotos() { return new global::FlickrPhotos.Views.FlickrPhotos(); }
+        private object Activate_32_FlickrAuthenticationView() { return new global::FlickrPhotos.FlickrAuthenticationView(); }
+        private object Activate_33_MainPage() { return new global::FlickrPhotos.MainPage(); }
+        private object Activate_34_PhotosView() { return new global::FlickrPhotos.Views.PhotosView(); }
+        private object Activate_35_ObservableDictionary() { return new global::FlickrPhotos.Common.ObservableDictionary(); }
+        private void VectorAdd_7_TriggerCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WinRT.Triggers.Trigger>)instance;
+            var newItem = (global::WinRT.Triggers.Trigger)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_8_AttachableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WinRT.Triggers.Trigger>)instance;
+            var newItem = (global::WinRT.Triggers.Trigger)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_12_AttachableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WinRT.Triggers.TriggerAction>)instance;
+            var newItem = (global::WinRT.Triggers.TriggerAction)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_14_AttachableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WinRT.Triggers.Condition>)instance;
+            var newItem = (global::WinRT.Triggers.Condition)item;
+            collection.Add(newItem);
+        }
+        private void MapAdd_35_ObservableDictionary(object instance, object key, object item)
+        {
+            var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
+            var newKey = (global::System.String)key;
+            var newItem = (global::System.Object)item;
+            collection.Add(newKey, newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -243,46 +330,204 @@ namespace FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 6:   //  FlickrPhotos.Views.FlickrPhotos
+            case 6:   //  WinRT.Triggers.Interactions
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.AddMemberName("Triggers");
+                xamlType = userType;
+                break;
+
+            case 7:   //  WinRT.Triggers.TriggerCollection
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRT.Triggers.AttachableCollection`1<WinRT.Triggers.Trigger>"));
+                userType.CollectionAdd = VectorAdd_7_TriggerCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 8:   //  WinRT.Triggers.AttachableCollection`1<WinRT.Triggers.Trigger>
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
+                userType.Activator = Activate_8_AttachableCollection;
+                userType.CollectionAdd = VectorAdd_8_AttachableCollection;
+                xamlType = userType;
+                break;
+
+            case 9:   //  Windows.UI.Xaml.FrameworkElement
+                xamlType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 10:   //  WinRT.Triggers.Trigger
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRT.Triggers.AssociatableElement"));
+                userType.SetContentPropertyName("WinRT.Triggers.Trigger.TriggerActions");
+                userType.AddMemberName("TriggerActions");
+                xamlType = userType;
+                break;
+
+            case 11:   //  WinRT.Triggers.AssociatableElement
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
+                userType.AddMemberName("AssociatedObject");
+                xamlType = userType;
+                break;
+
+            case 12:   //  WinRT.Triggers.AttachableCollection`1<WinRT.Triggers.TriggerAction>
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
+                userType.CollectionAdd = VectorAdd_12_AttachableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 13:   //  WinRT.Triggers.TriggerAction
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRT.Triggers.AssociatableElement"));
+                userType.SetContentPropertyName("WinRT.Triggers.TriggerAction.Conditions");
+                userType.AddMemberName("Conditions");
+                xamlType = userType;
+                break;
+
+            case 14:   //  WinRT.Triggers.AttachableCollection`1<WinRT.Triggers.Condition>
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
+                userType.CollectionAdd = VectorAdd_14_AttachableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 15:   //  WinRT.Triggers.Condition
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRT.Triggers.AssociatableElement"));
+                userType.Activator = Activate_15_Condition;
+                userType.AddMemberName("Operator");
+                userType.AddMemberName("LeftOperand");
+                userType.AddMemberName("RightOperand");
+                xamlType = userType;
+                break;
+
+            case 16:   //  WinRT.Triggers.ConditionOperator
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Equals", global::WinRT.Triggers.ConditionOperator.Equals);
+                userType.AddEnumValue("NotEquals", global::WinRT.Triggers.ConditionOperator.NotEquals);
+                userType.AddEnumValue("GreaterThan", global::WinRT.Triggers.ConditionOperator.GreaterThan);
+                userType.AddEnumValue("LessThan", global::WinRT.Triggers.ConditionOperator.LessThan);
+                userType.AddEnumValue("GreaterThanOrEqual", global::WinRT.Triggers.ConditionOperator.GreaterThanOrEqual);
+                userType.AddEnumValue("LessThanOrEqual", global::WinRT.Triggers.ConditionOperator.LessThanOrEqual);
+                xamlType = userType;
+                break;
+
+            case 17:   //  System.Enum
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                xamlType = userType;
+                break;
+
+            case 18:   //  System.ValueType
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 19:   //  Windows.UI.Xaml.DependencyObject
+                xamlType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 20:   //  WinRT.Triggers.EventTrigger
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRT.Triggers.EventHookingTrigger"));
+                userType.Activator = Activate_20_EventTrigger;
+                userType.SetContentPropertyName("WinRT.Triggers.Trigger.TriggerActions");
+                userType.AddMemberName("EventName");
+                userType.AddMemberName("SourceObject");
+                xamlType = userType;
+                break;
+
+            case 21:   //  WinRT.Triggers.EventHookingTrigger
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRT.Triggers.Trigger"));
+                userType.SetContentPropertyName("WinRT.Triggers.Trigger.TriggerActions");
+                xamlType = userType;
+                break;
+
+            case 22:   //  String
+                xamlType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 23:   //  WinRT.Triggers.InvokeCommandAction
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRT.Triggers.TriggerAction"));
+                userType.Activator = Activate_23_InvokeCommandAction;
+                userType.SetContentPropertyName("WinRT.Triggers.TriggerAction.Conditions");
+                userType.AddMemberName("Command");
+                userType.AddMemberName("PassEventArgsToCommand");
+                userType.AddMemberName("CommandParameter");
+                xamlType = userType;
+                break;
+
+            case 24:   //  System.Windows.Input.ICommand
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 25:   //  Boolean
+                xamlType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 26:   //  FlickrPhotos.Views.FlickrAlbums
                 userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_FlickrPhotos;
+                userType.Activator = Activate_26_FlickrAlbums;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Windows.UI.Xaml.Controls.Page
+            case 27:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  Windows.UI.Xaml.Controls.UserControl
+            case 28:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  FlickrPhotos.Views.WebViewExtensions
+            case 29:   //  FlickrPhotos.Views.FlickrPhotos
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_29_FlickrPhotos;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 30:   //  FlickrPhotos.Views.WebViewExtensions
                 userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("UriSource");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  String
+            case 31:   //  Windows.UI.Xaml.Controls.WebView
                 xamlType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  Windows.UI.Xaml.Controls.WebView
-                xamlType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 12:   //  FlickrPhotos.FlickrAuthenticationView
+            case 32:   //  FlickrPhotos.FlickrAuthenticationView
                 userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_FlickrAuthenticationView;
+                userType.Activator = Activate_32_FlickrAuthenticationView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  FlickrPhotos.MainPage
+            case 33:   //  FlickrPhotos.MainPage
                 userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_MainPage;
+                userType.Activator = Activate_33_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 34:   //  FlickrPhotos.Views.PhotosView
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_34_PhotosView;
+                userType.AddMemberName("DefaultViewModel");
+                userType.AddMemberName("NavigationHelper");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 35:   //  FlickrPhotos.Common.ObservableDictionary
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.DictionaryAdd = MapAdd_35_ObservableDictionary;
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 36:   //  FlickrPhotos.Common.NavigationHelper
+                userType = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -301,13 +546,136 @@ namespace FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo
             var that = (global::FlickrPhotos.ViewModel.ViewModelLocator)instance;
             return that.FlickrPhotosViewModel;
         }
-        private object get_2_WebViewExtensions_UriSource(object instance)
+        private object get_2_Interactions_Triggers(object instance)
+        {
+            return global::WinRT.Triggers.Interactions.GetTriggers((global::Windows.UI.Xaml.DependencyObject)instance);
+        }
+        private void set_2_Interactions_Triggers(object instance, object Value)
+        {
+            global::WinRT.Triggers.Interactions.SetTriggers((global::Windows.UI.Xaml.DependencyObject)instance, (global::WinRT.Triggers.TriggerCollection)Value);
+        }
+        private object get_3_Trigger_TriggerActions(object instance)
+        {
+            var that = (global::WinRT.Triggers.Trigger)instance;
+            return that.TriggerActions;
+        }
+        private void set_3_Trigger_TriggerActions(object instance, object Value)
+        {
+            var that = (global::WinRT.Triggers.Trigger)instance;
+            that.TriggerActions = (global::WinRT.Triggers.AttachableCollection<global::WinRT.Triggers.TriggerAction>)Value;
+        }
+        private object get_4_TriggerAction_Conditions(object instance)
+        {
+            var that = (global::WinRT.Triggers.TriggerAction)instance;
+            return that.Conditions;
+        }
+        private void set_4_TriggerAction_Conditions(object instance, object Value)
+        {
+            var that = (global::WinRT.Triggers.TriggerAction)instance;
+            that.Conditions = (global::WinRT.Triggers.AttachableCollection<global::WinRT.Triggers.Condition>)Value;
+        }
+        private object get_5_Condition_Operator(object instance)
+        {
+            var that = (global::WinRT.Triggers.Condition)instance;
+            return that.Operator;
+        }
+        private void set_5_Condition_Operator(object instance, object Value)
+        {
+            var that = (global::WinRT.Triggers.Condition)instance;
+            that.Operator = (global::WinRT.Triggers.ConditionOperator)Value;
+        }
+        private object get_6_Condition_LeftOperand(object instance)
+        {
+            var that = (global::WinRT.Triggers.Condition)instance;
+            return that.LeftOperand;
+        }
+        private void set_6_Condition_LeftOperand(object instance, object Value)
+        {
+            var that = (global::WinRT.Triggers.Condition)instance;
+            that.LeftOperand = (global::System.Object)Value;
+        }
+        private object get_7_Condition_RightOperand(object instance)
+        {
+            var that = (global::WinRT.Triggers.Condition)instance;
+            return that.RightOperand;
+        }
+        private void set_7_Condition_RightOperand(object instance, object Value)
+        {
+            var that = (global::WinRT.Triggers.Condition)instance;
+            that.RightOperand = (global::System.Object)Value;
+        }
+        private object get_8_AssociatableElement_AssociatedObject(object instance)
+        {
+            var that = (global::WinRT.Triggers.AssociatableElement)instance;
+            return that.AssociatedObject;
+        }
+        private object get_9_EventTrigger_EventName(object instance)
+        {
+            var that = (global::WinRT.Triggers.EventTrigger)instance;
+            return that.EventName;
+        }
+        private void set_9_EventTrigger_EventName(object instance, object Value)
+        {
+            var that = (global::WinRT.Triggers.EventTrigger)instance;
+            that.EventName = (global::System.String)Value;
+        }
+        private object get_10_EventTrigger_SourceObject(object instance)
+        {
+            var that = (global::WinRT.Triggers.EventTrigger)instance;
+            return that.SourceObject;
+        }
+        private void set_10_EventTrigger_SourceObject(object instance, object Value)
+        {
+            var that = (global::WinRT.Triggers.EventTrigger)instance;
+            that.SourceObject = (global::System.Object)Value;
+        }
+        private object get_11_InvokeCommandAction_Command(object instance)
+        {
+            var that = (global::WinRT.Triggers.InvokeCommandAction)instance;
+            return that.Command;
+        }
+        private void set_11_InvokeCommandAction_Command(object instance, object Value)
+        {
+            var that = (global::WinRT.Triggers.InvokeCommandAction)instance;
+            that.Command = (global::System.Windows.Input.ICommand)Value;
+        }
+        private object get_12_InvokeCommandAction_PassEventArgsToCommand(object instance)
+        {
+            var that = (global::WinRT.Triggers.InvokeCommandAction)instance;
+            return that.PassEventArgsToCommand;
+        }
+        private void set_12_InvokeCommandAction_PassEventArgsToCommand(object instance, object Value)
+        {
+            var that = (global::WinRT.Triggers.InvokeCommandAction)instance;
+            that.PassEventArgsToCommand = (global::System.Boolean)Value;
+        }
+        private object get_13_InvokeCommandAction_CommandParameter(object instance)
+        {
+            var that = (global::WinRT.Triggers.InvokeCommandAction)instance;
+            return that.CommandParameter;
+        }
+        private void set_13_InvokeCommandAction_CommandParameter(object instance, object Value)
+        {
+            var that = (global::WinRT.Triggers.InvokeCommandAction)instance;
+            that.CommandParameter = (global::System.Object)Value;
+        }
+        private object get_14_WebViewExtensions_UriSource(object instance)
         {
             return global::FlickrPhotos.Views.WebViewExtensions.GetUriSource((global::Windows.UI.Xaml.Controls.WebView)instance);
         }
-        private void set_2_WebViewExtensions_UriSource(object instance, object Value)
+        private void set_14_WebViewExtensions_UriSource(object instance, object Value)
         {
             global::FlickrPhotos.Views.WebViewExtensions.SetUriSource((global::Windows.UI.Xaml.Controls.WebView)instance, (global::System.String)Value);
+        }
+        private object get_15_PhotosView_DefaultViewModel(object instance)
+        {
+            var that = (global::FlickrPhotos.Views.PhotosView)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_16_PhotosView_NavigationHelper(object instance)
+        {
+            var that = (global::FlickrPhotos.Views.PhotosView)instance;
+            return that.NavigationHelper;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -329,13 +697,109 @@ namespace FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo
                 xamlMember.Getter = get_1_ViewModelLocator_FlickrPhotosViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "WinRT.Triggers.Interactions.Triggers":
+                userType = (global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRT.Triggers.Interactions");
+                xamlMember = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlMember(this, "Triggers", "WinRT.Triggers.TriggerCollection");
+                xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
+                xamlMember.SetIsAttachable();
+                xamlMember.Getter = get_2_Interactions_Triggers;
+                xamlMember.Setter = set_2_Interactions_Triggers;
+                break;
+            case "WinRT.Triggers.Trigger.TriggerActions":
+                userType = (global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRT.Triggers.Trigger");
+                xamlMember = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlMember(this, "TriggerActions", "WinRT.Triggers.AttachableCollection`1<WinRT.Triggers.TriggerAction>");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_3_Trigger_TriggerActions;
+                xamlMember.Setter = set_3_Trigger_TriggerActions;
+                break;
+            case "WinRT.Triggers.TriggerAction.Conditions":
+                userType = (global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRT.Triggers.TriggerAction");
+                xamlMember = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlMember(this, "Conditions", "WinRT.Triggers.AttachableCollection`1<WinRT.Triggers.Condition>");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_4_TriggerAction_Conditions;
+                xamlMember.Setter = set_4_TriggerAction_Conditions;
+                break;
+            case "WinRT.Triggers.Condition.Operator":
+                userType = (global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRT.Triggers.Condition");
+                xamlMember = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlMember(this, "Operator", "WinRT.Triggers.ConditionOperator");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_5_Condition_Operator;
+                xamlMember.Setter = set_5_Condition_Operator;
+                break;
+            case "WinRT.Triggers.Condition.LeftOperand":
+                userType = (global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRT.Triggers.Condition");
+                xamlMember = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlMember(this, "LeftOperand", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_6_Condition_LeftOperand;
+                xamlMember.Setter = set_6_Condition_LeftOperand;
+                break;
+            case "WinRT.Triggers.Condition.RightOperand":
+                userType = (global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRT.Triggers.Condition");
+                xamlMember = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlMember(this, "RightOperand", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_7_Condition_RightOperand;
+                xamlMember.Setter = set_7_Condition_RightOperand;
+                break;
+            case "WinRT.Triggers.AssociatableElement.AssociatedObject":
+                userType = (global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRT.Triggers.AssociatableElement");
+                xamlMember = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.FrameworkElement");
+                xamlMember.Getter = get_8_AssociatableElement_AssociatedObject;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "WinRT.Triggers.EventTrigger.EventName":
+                userType = (global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRT.Triggers.EventTrigger");
+                xamlMember = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlMember(this, "EventName", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_9_EventTrigger_EventName;
+                xamlMember.Setter = set_9_EventTrigger_EventName;
+                break;
+            case "WinRT.Triggers.EventTrigger.SourceObject":
+                userType = (global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRT.Triggers.EventTrigger");
+                xamlMember = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_10_EventTrigger_SourceObject;
+                xamlMember.Setter = set_10_EventTrigger_SourceObject;
+                break;
+            case "WinRT.Triggers.InvokeCommandAction.Command":
+                userType = (global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRT.Triggers.InvokeCommandAction");
+                xamlMember = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlMember(this, "Command", "System.Windows.Input.ICommand");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_11_InvokeCommandAction_Command;
+                xamlMember.Setter = set_11_InvokeCommandAction_Command;
+                break;
+            case "WinRT.Triggers.InvokeCommandAction.PassEventArgsToCommand":
+                userType = (global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRT.Triggers.InvokeCommandAction");
+                xamlMember = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlMember(this, "PassEventArgsToCommand", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_12_InvokeCommandAction_PassEventArgsToCommand;
+                xamlMember.Setter = set_12_InvokeCommandAction_PassEventArgsToCommand;
+                break;
+            case "WinRT.Triggers.InvokeCommandAction.CommandParameter":
+                userType = (global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRT.Triggers.InvokeCommandAction");
+                xamlMember = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlMember(this, "CommandParameter", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_13_InvokeCommandAction_CommandParameter;
+                xamlMember.Setter = set_13_InvokeCommandAction_CommandParameter;
+                break;
             case "FlickrPhotos.Views.WebViewExtensions.UriSource":
                 userType = (global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FlickrPhotos.Views.WebViewExtensions");
                 xamlMember = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlMember(this, "UriSource", "String");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.Controls.WebView");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_2_WebViewExtensions_UriSource;
-                xamlMember.Setter = set_2_WebViewExtensions_UriSource;
+                xamlMember.Getter = get_14_WebViewExtensions_UriSource;
+                xamlMember.Setter = set_14_WebViewExtensions_UriSource;
+                break;
+            case "FlickrPhotos.Views.PhotosView.DefaultViewModel":
+                userType = (global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FlickrPhotos.Views.PhotosView");
+                xamlMember = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "FlickrPhotos.Common.ObservableDictionary");
+                xamlMember.Getter = get_15_PhotosView_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "FlickrPhotos.Views.PhotosView.NavigationHelper":
+                userType = (global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FlickrPhotos.Views.PhotosView");
+                xamlMember = new global::FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo.XamlMember(this, "NavigationHelper", "FlickrPhotos.Common.NavigationHelper");
+                xamlMember.Getter = get_16_PhotosView_NavigationHelper;
+                xamlMember.SetIsReadOnly();
                 break;
             }
             return xamlMember;
@@ -662,5 +1126,6 @@ namespace FlickrPhotos.FlickrPhotos_Windows_XamlTypeInfo
         }
     }
 }
+
 
 

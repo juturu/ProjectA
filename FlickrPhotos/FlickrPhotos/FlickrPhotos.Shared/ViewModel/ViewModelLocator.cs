@@ -48,6 +48,7 @@ namespace FlickrPhotos.ViewModel
             var navigationService = new NavigationService();
             navigationService.Configure("FlickrAuthentication", typeof(FlickrAuthenticationView));
             navigationService.Configure("FlickrPhotos", typeof(Views.FlickrPhotos));
+            navigationService.Configure("PhotosView", typeof(Views.PhotosView));
             // navigationService.Configure("key1", typeof(OtherPage1));
             // navigationService.Configure("key2", typeof(OtherPage2));
 

@@ -13,8 +13,13 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Popup x:Name="WebViewPopup" IsOpen="{Binding Visible}" Width="400" Height="600" >
+            <Popup.Transitions>
+                <TransitionCollection>
+                    <PopupThemeTransition></PopupThemeTransition>
+                </TransitionCollection>
+            </Popup.Transitions>
             <StackPanel>
-                <WebView x:Name="FlickrAuthenticationWebView" view:WebViewExtensions.UriSource="{Binding AuthenticationUri, Mode=TwoWay}" Width="400" Height="600" DefaultBackgroundColor="Green">
+                <WebView x:Name="FlickrAuthenticationWebView" view:WebViewExtensions.UriSource="{Binding AuthenticationUri, Mode=TwoWay}" Width="400" Height="600">
                 </WebView>
             </StackPanel>
         </Popup>
