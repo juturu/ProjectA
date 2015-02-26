@@ -156,6 +156,7 @@ namespace FlickrPhotos
 
         private void FlickrAuthenticationView_OnLoaded(object sender, RoutedEventArgs e)
         {
+            // ToDO: Remove this and move this logic out to app startup.
             FlickrAuthentication dataContext = (sender as FlickrAuthenticationView).DataContext as FlickrAuthentication;
             if (!dataContext.Visible)
             {

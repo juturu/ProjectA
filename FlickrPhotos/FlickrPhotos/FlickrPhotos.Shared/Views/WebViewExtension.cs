@@ -57,6 +57,7 @@ namespace FlickrPhotos.Views
                             return;
                         }
 
+                        // TODO: This needs to be abstracted out
                         var flickrAuthentication = webView.DataContext as FlickrAuthentication;
                         flickrAuthentication.Authenticate(oauthVerifier);
 

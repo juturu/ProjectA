@@ -27,38 +27,38 @@ namespace FlickrPhotos.Model
             FlickrAuthenticationManager flickrAuthenticationManager = new FlickrAuthenticationManager();
             Flickr f = flickrAuthenticationManager.AuthInstance;
             _photosCollection.Clear();
-            f.PhotosetsGetListAsync(async (r) =>
-            {
-                PhotosetCollection photosetCollection = r.Result;
+            //f.PhotosetsGetListAsync(async (r) =>
+            //{
+            //    PhotosetCollection photosetCollection = r.Result;
 
-                foreach (Photoset p in photosetCollection)
-                {
-                    f.PhotosetsGetPhotosAsync(p.PhotosetId, async (photos) =>
-                    {
-                        PhotosetPhotoCollection photoCollection = photos.Result;
+            //    foreach (Photoset p in photosetCollection)
+            //    {
+            //        f.PhotosetsGetPhotosAsync(p.PhotosetId, async (photos) =>
+            //        {
+            //            PhotosetPhotoCollection photoCollection = photos.Result;
 
-                        foreach (FlickrNet.Photo photo in photoCollection)
-                        {
-                            _photosCollection.Add(new Photo(new Uri(photo.LargeSquareThumbnailUrl),
-                                new Uri(photo.LargeUrl), photo.Title, ImageSource.Flickr));
-                        }
+            //            foreach (FlickrNet.Photo photo in photoCollection)
+            //            {
+            //                _photosCollection.Add(new Photo(new Uri(photo.LargeSquareThumbnailUrl),
+            //                    new Uri(photo.LargeUrl), photo.Title, ImageSource.Flickr));
+            //            }
 
-                        callback(_photosCollection);
-                    });
-                }
-            });
+            //            callback(_photosCollection);
+            //        });
+            //    }
+            //});
 
             // Recent Photos on Flickr
-            //f.PhotosGetRecentAsync(0, 20, (r) =>
-            //{
-            //    PhotoCollection photoCollection = r.Result;
-            //    foreach (FlickrNet.Photo p in photoCollection)
-            //    {
-            //        _photosCollection.Add(new Photo(new Uri(p.LargeSquareThumbnailUrl),
-            //                    new Uri(p.LargeUrl), p.Title, ImageSource.Flickr));
-            //    }
-            //    callback(_photosCollection);
-            //});
+            f.PhotosGetRecentAsync(0, 20, (r) =>
+            {
+                PhotoCollection photoCollection = r.Result;
+                foreach (FlickrNet.Photo p in photoCollection)
+                {
+                    _photosCollection.Add(new Photo(new Uri(p.LargeSquareThumbnailUrl),
+                                new Uri(p.LargeUrl), p.Title, ImageSource.Flickr));
+                }
+                callback(_photosCollection);
+            });
         }
 
         // Move this to its own class
