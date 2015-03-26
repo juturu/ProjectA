@@ -164,6 +164,15 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Callisto">
+      <HintPath>..\..\packages\Callisto.1.4.0\lib\netcore451\Callisto.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook">
+      <HintPath>..\..\packages\Facebook.6.4.0\lib\win8\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Client">
+      <HintPath>..\..\packages\Facebook.Client.1.0.2\lib\win81\Facebook.Client.dll</HintPath>
+    </Reference>
     <Reference Include="FlickrNet">
       <HintPath>..\..\packages\FlickrNet.3.15.0\lib\net20\FlickrNet.dll</HintPath>
     </Reference>

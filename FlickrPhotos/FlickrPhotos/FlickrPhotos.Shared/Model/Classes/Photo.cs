@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FlickPhotos.Model;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -19,5 +20,10 @@ namespace FlickrPhotos.Model
             Name = name;
             ImageSource = imageSource;
         }
+
+        public string Title {get; set;}
+        public IEnumerable<Like> Likes {get; set;}
+        public IEnumerable<Comment> Comments {get; set;}
+        public DateTime CreationTime {get; set;}
     }
 }

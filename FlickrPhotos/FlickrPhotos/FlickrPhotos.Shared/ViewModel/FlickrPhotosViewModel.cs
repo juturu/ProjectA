@@ -134,8 +134,7 @@ namespace FlickrPhotos.ViewModel
                 {
                     _albumsViewCommand = new RelayCommand(() =>
                     {
-                        // Todo: Implement Albums View
-                        //_navigationService.NavigateTo("AlbumsView");
+                        _navigationService.NavigateTo("FlickrAlbums");
                     });
                 }
 

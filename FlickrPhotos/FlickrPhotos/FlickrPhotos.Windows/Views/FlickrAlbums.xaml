@@ -6,11 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:triggers="using:WinRT.Triggers"
+    xmlns:controls="using:Callisto.Controls"
     mc:Ignorable="d"
     DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=FlickrAlbumsViewModel}">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <GridView x:Name="PhotoItems" ItemsSource="{Binding AlbumsCollection}" IsItemClickEnabled="True" SelectionMode="Extended">
+        <GridView ItemsSource="{Binding AlbumsCollection}" IsItemClickEnabled="True">
             <triggers:Interactions.Triggers>
                 <triggers:EventTrigger EventName="ItemClick">
                     <triggers:InvokeCommandAction Command="{Binding Path=AlbumClickedCommand}" PassEventArgsToCommand="True"></triggers:InvokeCommandAction>
@@ -18,12 +19,22 @@
             </triggers:Interactions.Triggers>
             <GridView.ItemTemplate>
                 <DataTemplate>
-                    <Grid Height="250" Width="250">
-                        <Image Source="{Binding Path=ThumbNailUri}" Stretch="UniformToFill"></Image>
-                        <StackPanel Orientation="Vertical" Background="#CC000000" Height="90" VerticalAlignment="Bottom">
-                            <TextBlock Text="{Binding Path=Name}" Margin="10,3,0,0" Width="242" Height="62" 
+                    <Grid>
+                    <TextBlock x:Name="AlbumNameTextBlock" Text="{Binding Name}" Visibility="Collapsed"></TextBlock>
+                    <controls:LiveTile ItemsSource="{Binding AlbumPhotos}" Direction="Up" MinHeight="300" MinWidth="300">
+                        <controls:LiveTile.ItemTemplate>
+                            <DataTemplate>
+                                <Grid x:Name="ImageGrid">
+                                    <Image Source="{Binding Path=PhotoUri}" Stretch="UniformToFill"></Image>
+                                    <StackPanel Orientation="Vertical" Background="#CC000000" Height="90" VerticalAlignment="Bottom">
+                                        <TextBlock Text="{Binding ElementName=AlbumNameTextBlock, Path=Text}" Margin="10,3,0,0" Width="242" Height="62" 
                                    TextTrimming="WordEllipsis" TextWrapping="Wrap" HorizontalAlignment="Left"/>
-                        </StackPanel>
+                                    </StackPanel>
+                                    
+                                </Grid>
+                            </DataTemplate>
+                        </controls:LiveTile.ItemTemplate>
+                    </controls:LiveTile>
                     </Grid>
                 </DataTemplate>
             </GridView.ItemTemplate>
@@ -32,6 +43,7 @@
                     <WrapGrid Orientation="Vertical"></WrapGrid>
                 </ItemsPanelTemplate>
             </GridView.ItemsPanel>
+            
         </GridView>
     </Grid>
     <Page.BottomAppBar>

@@ -33,3 +33,16 @@ c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos
 c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
 c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\jhreddy\documents\visual studio 2013\Projects\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\ProjectArchitectures.txt
+C:\Users\jhreddy\Documents\GitHub\ProjectA\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\FlickrPhotos.WindowsPhone.csprojResolveAssemblyReference.cache
+C:\Users\jhreddy\Documents\GitHub\ProjectA\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\App.g.i.cs
+C:\Users\jhreddy\Documents\GitHub\ProjectA\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\App.g.cs
+C:\Users\jhreddy\Documents\GitHub\ProjectA\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\MainPage.g.i.cs
+C:\Users\jhreddy\Documents\GitHub\ProjectA\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\MainPage.g.cs
+C:\Users\jhreddy\Documents\GitHub\ProjectA\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\jhreddy\Documents\GitHub\ProjectA\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\App.xaml
+C:\Users\jhreddy\Documents\GitHub\ProjectA\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\MainPage.xaml
+C:\Users\jhreddy\Documents\GitHub\ProjectA\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\App.xbf
+C:\Users\jhreddy\Documents\GitHub\ProjectA\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\MainPage.xbf
+C:\Users\jhreddy\Documents\GitHub\ProjectA\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\XamlSaveStateFile.xml
+C:\Users\jhreddy\Documents\GitHub\ProjectA\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\FlickrPhotos.WindowsPhone.exe
+C:\Users\jhreddy\Documents\GitHub\ProjectA\FlickrPhotos\FlickrPhotos\FlickrPhotos.WindowsPhone\obj\Debug\FlickrPhotos.WindowsPhone.pdb

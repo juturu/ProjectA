@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Networking.BackgroundTransfer;
@@ -27,37 +28,69 @@ namespace FlickrPhotos.Model
             FlickrAuthenticationManager flickrAuthenticationManager = new FlickrAuthenticationManager();
             Flickr f = flickrAuthenticationManager.AuthInstance;
             _photosCollection.Clear();
-            //f.PhotosetsGetListAsync(async (r) =>
-            //{
-            //    PhotosetCollection photosetCollection = r.Result;
+            f.PhotosetsGetListAsync(async (r) =>
+            {
+                PhotosetCollection photosetCollection = r.Result;
 
-            //    foreach (Photoset p in photosetCollection)
-            //    {
-            //        f.PhotosetsGetPhotosAsync(p.PhotosetId, async (photos) =>
-            //        {
-            //            PhotosetPhotoCollection photoCollection = photos.Result;
+                foreach (Photoset p in photosetCollection)
+                {
+                    f.PhotosetsGetPhotosAsync(p.PhotosetId, async (photos) =>
+                    {
+                        PhotosetPhotoCollection photoCollection = photos.Result;
 
-            //            foreach (FlickrNet.Photo photo in photoCollection)
-            //            {
-            //                _photosCollection.Add(new Photo(new Uri(photo.LargeSquareThumbnailUrl),
-            //                    new Uri(photo.LargeUrl), photo.Title, ImageSource.Flickr));
-            //            }
+                        foreach (FlickrNet.Photo photo in photoCollection)
+                        {
+                            _photosCollection.Add(new Photo(new Uri(photo.LargeSquareThumbnailUrl),
+                                new Uri(photo.LargeUrl), photo.Title, ImageSource.Flickr));
+                        }
 
-            //            callback(_photosCollection);
-            //        });
-            //    }
-            //});
+                        callback(_photosCollection);
+                    });
+                }
+            });
 
             // Recent Photos on Flickr
-            f.PhotosGetRecentAsync(0, 20, (r) =>
+            //f.PhotosGetRecentAsync(0, 20, (r) =>
+            //{
+            //    PhotoCollection photoCollection = r.Result;
+            //    foreach (FlickrNet.Photo p in photoCollection)
+            //    {
+            //        _photosCollection.Add(new Photo(new Uri(p.LargeSquareThumbnailUrl),
+            //                    new Uri(p.LargeUrl), p.Title, ImageSource.Flickr));
+            //    }
+            //    callback(_photosCollection);
+            //});
+        }
+
+        public void GetAlbums(Action<ObservableCollection<Album>> callback)
+        {
+            FlickrAuthenticationManager flickrAuthenticationManager = new FlickrAuthenticationManager();
+            Flickr f = flickrAuthenticationManager.AuthInstance;
+            ObservableCollection<Album> albums = new ObservableCollection<Album>();
+            f.PhotosetsGetListAsync(async (r) =>
             {
-                PhotoCollection photoCollection = r.Result;
-                foreach (FlickrNet.Photo p in photoCollection)
+                PhotosetCollection photosetCollection = r.Result;
+                int i = 0;
+                foreach (Photoset p in photosetCollection)
                 {
-                    _photosCollection.Add(new Photo(new Uri(p.LargeSquareThumbnailUrl),
-                                new Uri(p.LargeUrl), p.Title, ImageSource.Flickr));
+                    albums.Add(new Album{Name=p.Title, AlbumPhotos=new ObservableCollection<AlbumPhoto>()});
+                    f.PhotosetsGetPhotosAsync(p.PhotosetId, async (photos) =>
+                    {
+                        PhotosetPhotoCollection photoCollection = photos.Result;
+
+                        //ObservableCollection<Uri> albumPhotoUris = new ObservableCollection<Uri>();
+                        foreach (FlickrNet.Photo photo in photoCollection)
+                        {
+                            albums[i].AlbumPhotos.Add(new AlbumPhoto{PhotoUri= new Uri(photo.LargeSquareThumbnailUrl)});
+                            //albumPhotoUris.Add(new Uri(photo.LargeSquareThumbnailUrl));
+                            //_photosCollection.Add(new Photo(new Uri(photo.LargeSquareThumbnailUrl),
+                            //    new Uri(photo.LargeUrl), photo.Title, ImageSource.Flickr));
+                        }
+
+                        i++;
+                        callback(albums);
+                    });
                 }
-                callback(_photosCollection);
             });
         }
 

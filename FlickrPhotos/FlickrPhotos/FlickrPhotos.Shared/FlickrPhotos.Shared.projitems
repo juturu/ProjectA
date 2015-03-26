@@ -16,13 +16,23 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)AuthenticationManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IActivityFeed.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IAuthenticationManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IPhotoManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Classes\Album.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Classes\AlbumPhoto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Classes\CircleType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Classes\Comment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Classes\ImageSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Classes\Like.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Classes\Person.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Classes\Photo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Classes\PhotoFeed.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Classes\PhotoFeedSet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Classes\StoryboardMessage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\FlickrAuthenticationManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\FlickrPhotoManager.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\ImageSource.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Photo.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\StoryboardMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FlickrAlbumsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FlickrPhotosViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FlickrAuthentication.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLocator.cs" />

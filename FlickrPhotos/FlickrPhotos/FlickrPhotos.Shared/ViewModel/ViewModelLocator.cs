@@ -32,6 +32,8 @@ namespace FlickrPhotos.ViewModel
 
             SimpleIoc.Default.Register<FlickrAuthentication>();
             SimpleIoc.Default.Register<FlickrPhotosViewModel>();
+            SimpleIoc.Default.Register<FlickrAlbumsViewModel>();
+            
         }
         public FlickrAuthentication FlickrAuthenticationViewModel
         {
@@ -43,12 +45,18 @@ namespace FlickrPhotos.ViewModel
             get { return ServiceLocator.Current.GetInstance<FlickrPhotosViewModel>(); }
         }
 
+        public FlickrAlbumsViewModel FlickrAlbumsViewModel
+        {
+            get { return ServiceLocator.Current.GetInstance<FlickrAlbumsViewModel>(); }
+        }
+
         private INavigationService CreateNavigationService()
         {
             var navigationService = new NavigationService();
             navigationService.Configure("FlickrAuthentication", typeof(FlickrAuthenticationView));
             navigationService.Configure("FlickrPhotos", typeof(Views.FlickrPhotos));
             navigationService.Configure("PhotosView", typeof(Views.PhotosView));
+            navigationService.Configure("FlickrAlbums", typeof(Views.FlickrAlbums));
             // navigationService.Configure("key1", typeof(OtherPage1));
             // navigationService.Configure("key2", typeof(OtherPage2));
 
